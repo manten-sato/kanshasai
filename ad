@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>まんてんの里　大感謝祭</title>
+
+<style>
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+}
+
+/* 全体を中央に寄せる箱 */
+.wrapper {
+  max-width: 800px;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+/* タイトル＋イラスト */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+/* タイトル部分 */
+.header-text {
+  text-align: left;
+}
+
+/* イラスト */
+.header img {
+  height: 80px;
+}
+
+/* 広告画像 */
+.ad {
+  margin-top: 20px;
+}
+
+.ad img {
+  width: 250px;
+  margin: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.ad img:hover {
+  opacity: 0.8;
+}
+
+/* スマホ対応 */
+@media (max-width: 600px) {
+
+  .header {
+    flex-direction: column;
+  }
+
+  .header-text {
+    text-align: center;
+  }
+
+  .header img {
+    height: 120px;
+  }
+
+  .menu img {
+    width: 90%;
+  }
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="wrapper">
+
+  <!-- タイトル＋イラスト -->
+  <div class="header">
+    <div class="header-text">
+      <h1>まんてんの里　大感謝祭</h1>
+      <p>画像をクリックすると拡大できます</p>
+    </div>
+
+    <img src="mantenchan.png">
+  </div>
+
+  <!-- メニュー -->
+  <div class="ad">
+
+    <a href="fes1.jpg" target="_blank">
+      <img src="fes1sub.jpg">
+    </a>
+
+    <a href="fes2.jpg" target="_blank">
+      <img src="fes2sub.jpg">
+    </a>
+
+  </div>
+
+</div>
+
+</body>
+</html>
