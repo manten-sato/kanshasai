@@ -1,9 +1,9 @@
-```html
 <!DOCTYPE html>
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>感謝祭広告</title>
 
 <style>
 body {
@@ -13,18 +13,23 @@ body {
   text-align: center;
 }
 
-/* 広告 */
+/* 広告エリア */
 .ad {
-  margin: 0;
-  padding: 0;
+  padding: 5px 0 10px;
 }
 
+/* 説明文 */
+.ad p {
+  margin: 5px 0 10px;
+  font-size: 14px;
+}
+
+/* サムネイル */
 .ad img {
   width: 250px;
   margin: 5px;
   cursor: pointer;
-  transition: 0.2s;
-  vertical-align: top;
+  transition: opacity 0.2s;
 }
 
 .ad img:hover {
@@ -35,7 +40,7 @@ body {
 @media (max-width: 600px) {
   .ad img {
     width: 42%;
-    margin: 3px;
+    max-width: 250px;
   }
 }
 </style>
@@ -45,6 +50,8 @@ body {
 <body>
 
 <div class="ad">
+
+  <p>画像をクリックすると拡大できます</p>
 
   <a href="fes1.JPG" target="_blank">
     <img src="fes1sub.JPG" alt="感謝祭広告1">
@@ -58,4 +65,4 @@ body {
 
 </body>
 </html>
-```
+
